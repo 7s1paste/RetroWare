@@ -4,6 +4,7 @@ local ImageLabel = Instance.new("ImageLabel")
 local Frame = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
 local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
 local ImageLabel_3 = Instance.new("ImageLabel")
 local TextLabel_2 = Instance.new("TextLabel")
 local load = Instance.new("TextButton")
@@ -6374,7 +6375,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 							"Losing to NIGGERWARE? Cannot be me.",
 							"1",
 							"NIGGERWARE UID?, right none",
-							"You died",
+							"You died to a bbot ui stormy aww uwu",
 							"Died to Hitpart",
 							"Died to Standard",
 							"UID issue",
@@ -6382,8 +6383,8 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 							"When are u gonna win",
 							"cant beat me with that skidded cheat?",
 							"Oopsie",
-							"some retards from og swaggy niggers raped yo whole family kid",
-							"What cheat is that nigga?? ",
+							"this cheat is a paste and you are playing against a skid whom if tapped you are retarded secret message i some retards from og swaggy niggers raped yo whole family kid",
+							"What cheat is that Qual? ",
 							"Ratted, it seems like ur mom is my gf",	
 							"It looks like your face is on 'The Baddest Hvh'.",
 							"Don't you love nature, despite what it did to you?",
