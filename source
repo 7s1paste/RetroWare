@@ -248,7 +248,7 @@ TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.Position = UDim2.new(0.0179999992, 0, 0, 0)
 TextLabel_5.Size = UDim2.new(0, 190, 0, 25)
 TextLabel_5.Font = Enum.Font.Ubuntu
-TextLabel_5.Text = "NIGGERWARE loader"
+TextLabel_5.Text = "RetroWare loader"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 16.000
 TextLabel_5.TextStrokeTransparency = 0.000
@@ -366,7 +366,7 @@ TextLabel_8.BackgroundTransparency = 1.000
 TextLabel_8.Position = UDim2.new(0.0179999992, 0, 0, 0)
 TextLabel_8.Size = UDim2.new(0, 190, 0, 25)
 TextLabel_8.Font = Enum.Font.Ubuntu
-TextLabel_8.Text = "NIGGERWARE loader"
+TextLabel_8.Text = "RetroWare loader"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 16.000
 TextLabel_8.TextStrokeTransparency = 0.000
@@ -444,8 +444,8 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 			local txt = game:GetService("TextService") 
 			local TweenService = game:GetService("TweenService") 
 			function library:Tween(...) TweenService:Create(...):Play() end 
-			local cfglocation = "NIGGERcfg/" 
-			makefolder("NIGGERcfg") 
+			local cfglocation = "Retrocfg/" 
+			makefolder("Retrocfg") 
 
 
 			-- caching 
@@ -529,7 +529,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 
 			function library:New(name) 
 				local menu = {} 
-				local NIGGER = INST("ScreenGui") 
+				local Retro = INST("ScreenGui") 
 				local Menu = Instance.new("ImageLabel")
 				local TextLabel = INST("TextLabel") 
 				local TabButtons = INST("Frame") 
@@ -537,10 +537,10 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				local Tabs = INST("Frame") 
 				local ImageLabel = Instance.new("ImageLabel")
 
-				NIGGER.Name = "electric boogalo" 
-				NIGGER.ResetOnSpawn = false 
-				NIGGER.ZIndexBehavior = "Global" 
-				NIGGER.DisplayOrder = 420133769 
+				Retro.Name = "electric boogalo" 
+				Retro.ResetOnSpawn = false 
+				Retro.ZIndexBehavior = "Global" 
+				Retro.DisplayOrder = 420133769 
 
 				ImageLabel.Parent = Menu
 				ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -553,11 +553,11 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				but.Modal = true 
 				but.Text = "" 
 				but.BackgroundTransparency = 1 
-				but.Parent = NIGGER 
+				but.Parent = Retro 
 
 				local cursor = INST("ImageLabel") 
 				cursor.Name = "cursor" 
-				cursor.Parent = NIGGER 
+				cursor.Parent = Retro 
 				cursor.BackgroundTransparency = 1 
 				cursor.Size = UDIM2(0,17,0,17) 
 				cursor.Image = "rbxassetid://518398610" 
@@ -569,12 +569,12 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				local Mouse = LocalPlayer:GetMouse() 
 
 				game:GetService("RunService").RenderStepped:connect(function() 
-					cursor.Visible = NIGGER.Enabled 
+					cursor.Visible = Retro.Enabled 
 					cursor.Position = UDIM2(0,Mouse.X-3,0,Mouse.Y+1) 
 				end) 
 
 				Menu.Name = "Menu"
-				Menu.Parent = NIGGER
+				Menu.Parent = Retro
 				Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 				Menu.Position = UDim2.new(0.5, -300, 0.5, -300)
@@ -586,8 +586,8 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 
 				game:GetService("UserInputService").InputBegan:Connect(function(key) 
 					if key.KeyCode == Enum.KeyCode.Insert then 
-						NIGGER.Enabled = not NIGGER.Enabled 
-						library.uiopen = NIGGER.Enabled 
+						Retro.Enabled = not Retro.Enabled 
+						library.uiopen = Retro.Enabled 
 					end 
 				end) 
 
@@ -844,7 +844,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				TextLabel.Position = UDim2.new(0, 8, 0, 0)
 				TextLabel.Size = UDim2.new(0, 570, 0, 23)
 				TextLabel.Font = Enum.Font.Ubuntu
-				TextLabel.Text = "NIGGERWARE"
+				TextLabel.Text = "RetroWare"
 				TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 				TextLabel.TextSize = 12.000
 				TextLabel.TextStrokeTransparency = 0.000
@@ -877,7 +877,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					
 					local args = {...}
 
-					if args[1] == "NIGGERWARE" then
+					if args[1] == "RetroWare" then
 						return library
 					end
 
@@ -4776,7 +4776,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 			return Tab 
 		end 
 
-		NIGGER.Parent = game.CoreGui 
+		Retro.Parent = game.CoreGui 
 		return menu 
 	end 
 			local somethings = {
@@ -5081,7 +5081,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					String.Value = LocalPlayer.Character:FindFirstChildOfClass("Shirt").ShirtTemplate 
 					String.Parent = LocalPlayer.Character:FindFirstChildOfClass("Shirt") 
 
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "clothes") then 
+					if TBLFIND(values.visuals.effects.remRetros.Jumbobox, "clothes") then 
 						LocalPlayer.Character:FindFirstChildOfClass("Shirt").ShirtTemplate = "" 
 					end 
 				end 
@@ -5091,7 +5091,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					String.Value = LocalPlayer.Character:FindFirstChildOfClass("Pants").PantsTemplate 
 					String.Parent = LocalPlayer.Character:FindFirstChildOfClass("Pants") 
 
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "clothes") then 
+					if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "clothes") then 
 						LocalPlayer.Character:FindFirstChildOfClass("Pants").PantsTemplate = "" 
 					end 
 				end 
@@ -5227,18 +5227,18 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				end 
 			end 
 
-			makefolder("NIGGERlua") 
+			makefolder("Retrolua") 
 
 			local allluas = {} 
 
-			for _,lua in pairs(listfiles("NIGGERlua")) do 
-				local luaname = GSUB(lua, "NIGGERlua\\", "") 
+			for _,lua in pairs(listfiles("Retrolua")) do 
+				local luaname = GSUB(lua, "Retrolua\\", "") 
 				INSERT(allluas, luaname) 
 			end 
 
 			RunService.RenderStepped:Wait() 
 
-			local gui = library:New("NIGGERWARE") 
+			local gui = library:New("RetroWare") 
 			local legit = gui:Tab("legit") 
 			local rage = gui:Tab("rage") 
 			local visuals = gui:Tab("visuals") 
@@ -5261,7 +5261,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 			local luascripts = luas:Sector("lua scripts", "Left") 
 			luascripts:Element("Scroll", "lua", {options = allluas, Amount = 5}) 
 			luascripts:Element("Button", "load", {}, function() 
-				loadstring(readfile("NIGGERlua\\"..values.luas["lua scripts"].lua.Scroll))() 
+				loadstring(readfile("Retrolua\\"..values.luas["lua scripts"].lua.Scroll))() 
 			end) 
 
 			local knife = skins:Sector("knife", "Left") 
@@ -5960,7 +5960,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					LArm.Transparency = 0 
 				end 
 			end) 
-			effects:Element("Jumbobox", "remNIGGERls", {options = {"scope", "scope lines", "flash", "smoke", "decals", "shadows", "clothes"}}, function(val) 
+			effects:Element("Jumbobox", "remRetrols", {options = {"scope", "scope lines", "flash", "smoke", "decals", "shadows", "clothes"}}, function(val) 
 				local tbl = val.Jumbobox 
 				if TBLFIND(tbl, "decals") then 
 					Client.createbullethole = function() end 
@@ -6369,12 +6369,12 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					if thing == true then
 						wait(0.1)
 						local chatmessages = {
-							"No NIGGERWARE? L",
+							"No RetroWare? L",
 							"Seems like u died",
 							"Did You die? aww",
-							"Losing to NIGGERWARE? Cannot be me.",
+							"Losing to RetroWare? Cannot be me.",
 							"1",
-							"NIGGERWARE UID?, right none",
+							"RetroWare UID?, right none",
 							"You died to a bbot ui stormy aww uwu",
 							"Died to Hitpart",
 							"Died to Standard",
@@ -6383,7 +6383,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 							"When are u gonna win",
 							"cant beat me with that skidded cheat?",
 							"Oopsie",
-							"this cheat is a paste and you are playing against a skid whom if tapped you are retarded secret message i some retards from og swaggy niggers raped yo whole family kid",
+							"Rawr",
 							"What cheat is that Qual? ",
 							"Ratted, it seems like ur mom is my gf",	
 							"It looks like your face is on 'The Baddest Hvh'.",
@@ -6468,7 +6468,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 				end 
 			end) 
 
-			local valuewtr = "NIGGERWARE"
+			local valuewtr = "RetroWare"
 
 			local addons = misc:Sector("addons", "Left") 
 
@@ -6515,9 +6515,7 @@ local function SVDWBHR_fake_script() -- TextButton.LocalScript
 					TextLabel.Size = UDim2.new(0, 1, 0, 20)
 					TextLabel.AutomaticSize = Enum.AutomaticSize.XY
 					TextLabel.Font = Enum.Font.Ubuntu
-					TextLabel.Text = "  NIGGERWARE  |  [IN-beta]  |  counter-blox   |  fps 000  |  000ms  | Renamed by 7s1 skid  | "
-					
-					        
+					TextLabel.Text = "  RetroWare  |  [IN-beta]  |  counter-blox   |  fps 000  |  000ms  "
 					TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 					TextLabel.TextSize = 11.000
 					TextLabel.TextStrokeTransparency = 0.000
@@ -6695,7 +6693,7 @@ local function CreateHitElement(text,col,time, size, size2, size3, size4)
         Label:Destroy()
     end)
 end
-CreateHitElement(" Welcome "..LocalPlayer.Name.." to NIGGERWARE!  ",Color3.new(1,1,1),3, 0, 280, 0, 22)
+CreateHitElement(" Welcome "..LocalPlayer.Name.." to RetroWare!  ",Color3.new(1,1,1),3, 0, 280, 0, 22)
 wait(0.5)
 CreateHitElement(" Press INSERT to open and close the menu!  ",Color3.new(1,1,1),3, 0, 245, 0, 22)
 CreateHitElement(" !!!  IMPORTANT  !!!\
@@ -7012,7 +7010,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					end
 				end
 			end
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "scope lines") then 
+					if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "scope lines") then 
 						NewScope.Enabled = LocalPlayer.Character:FindFirstChild("AIMING") and true or false 
 						Crosshairs.Scope.Visible = false 
 					else 
@@ -7999,7 +7997,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				return oldNewIndex(self, i, v) 
 			end 
 			Crosshairs.Scope:GetPropertyChangedSignal("Visible"):Connect(function(current) 
-				if not TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "scope lines") then return end 
+				if not TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "scope lines") then return end 
 
 				if current ~= false then 
 					Crosshairs.Scope.Visible = false 
@@ -8099,7 +8097,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 						OriginalRate.Value = smoke.ParticleEmitter.Rate 
 						OriginalRate.Name = "OriginalRate" 
 						OriginalRate.Parent = smoke 
-						if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "smokes") then 
+						if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "smokes") then 
 							smoke.ParticleEmitter.Rate = 0 
 						end 
 						smoke.Material = Enum.Material.ForceField 
@@ -8132,7 +8130,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					OriginalRate.Value = smoke.ParticleEmitter.Rate 
 					OriginalRate.Name = "OriginalRate" 
 					OriginalRate.Parent = smoke 
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "smokes") then 
+					if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "smokes") then 
 						smoke.ParticleEmitter.Rate = 0 
 					end 
 					smoke.Material = Enum.Material.ForceField 
@@ -8409,7 +8407,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					String.Value = char:FindFirstChildOfClass("Shirt").ShirtTemplate 
 					String.Parent = char:FindFirstChildOfClass("Shirt") 
 
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "clothes") then 
+					if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "clothes") then 
 						char:FindFirstChildOfClass("Shirt").ShirtTemplate = "" 
 					end 
 				end 
@@ -8419,7 +8417,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					String.Value = char:FindFirstChildOfClass("Pants").PantsTemplate 
 					String.Parent = char:FindFirstChildOfClass("Pants") 
 
-					if TBLFIND(values.visuals.effects.remNIGGERls.Jumbobox, "clothes") then 
+					if TBLFIND(values.visuals.effects.remRetrols.Jumbobox, "clothes") then 
 						char:FindFirstChildOfClass("Pants").PantsTemplate = "" 
 					end 
 				end 
@@ -8808,7 +8806,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					['@month'] = os.date("%b",os.time()),
 					['@day'] = os.date("%d",os.time()),
 					['@year'] = os.date("%Y",os.time()),
-					['@name'] = "NIGGERWARE",
+					['@name'] = "RetroWare",
 					['@version'] = "Version 0.7a [in-dev]"
 				}
 
@@ -8832,8 +8830,8 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			local txt = game:GetService("TextService")
 			local TweenService = game:GetService("TweenService")
 			function library:Tween(...) TweenService:Create(...):Play() end 
-			local cfglocation = "NIGGERcfg/" 
-			makefolder("NIGGERcfg") 
+			local cfglocation = "Retrocfg/" 
+			makefolder("Retrocfg") 
 
 			-- caching 
 			local Vec2 = Vector2.new 
@@ -8914,7 +8912,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			function library:New(name) 
 				local menu = {} 
 
-				local NIGGER = INST("ScreenGui") 
+				local Retro = INST("ScreenGui") 
 				local Menu = INST("ImageLabel") 
 				local TextLabel = INST("TextLabel") 
 				local TabButtons = INST("Frame") 
@@ -8926,20 +8924,20 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				local gradient2 = Instance.new("Frame")
 				local UIGradient_3 = Instance.new("UIGradient")
 
-				NIGGER.Name = "electric boogalo" 
-				NIGGER.ResetOnSpawn = false 
-				NIGGER.ZIndexBehavior = "Global" 
-				NIGGER.DisplayOrder = 420133769 
+				Retro.Name = "electric boogalo" 
+				Retro.ResetOnSpawn = false 
+				Retro.ZIndexBehavior = "Global" 
+				Retro.DisplayOrder = 420133769 
 
 				local but = INST("TextButton") 
 				but.Modal = true 
 				but.Text = "" 
 				but.BackgroundTransparency = 1 
-				but.Parent = NIGGER 
+				but.Parent = Retro 
 
 				local cursor = INST("ImageLabel") 
 				cursor.Name = "cursor" 	
-				cursor.Parent = NIGGER 
+				cursor.Parent = Retro 
 				cursor.BackgroundTransparency = 1 
 				cursor.Size = UDIM2(0,64,0,64) 
 				cursor.Image = "rbxassetid://7543116323" 
@@ -8951,12 +8949,13 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				local Mouse = LocalPlayer:GetMouse() 
 
 				game:GetService("RunService").RenderStepped:connect(function() 
-					cursor.Visible = NIGGER.Enabled 
+					cursor.Visible = Retro.Enabled 
 					cursor.Position = UDIM2(0,Mouse.X-32,0,Mouse.Y-28) 
 				end) 
 
 				Menu.Name = "Menu"
-				Menu.Parent = NIGGER
+				Menu.Parent = Retro
+			
 				Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Menu.BorderSizePixel = 0
 				Menu.Position = UDim2.new(0.5, -300, 0.5, -300)
@@ -8993,8 +8992,8 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 
 				game:GetService("UserInputService").InputBegan:Connect(function(key) 
 					if key.KeyCode == Enum.KeyCode.Insert then 
-						NIGGER.Enabled = not NIGGER.Enabled 
-						library.uiopen = NIGGER.Enabled 
+						Retro.Enabled = not Retro.Enabled 
+						library.uiopen = Retro.Enabled 
 					end 
 				end) 
 
@@ -9044,7 +9043,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					TextLabel.Position = UDim2.new(0.059, 0, 0, 0)
 					TextLabel.Size = UDim2.new(0, 398,0, 22)
 					TextLabel.Font = Enum.Font.Ubuntu
-					TextLabel.Text = "NIGGER - Nigga Balls | User: dev  | 13:11:53 PM - Jan. 27, 2022  |   Version 0.5a [in-dev]  "
+					TextLabel.Text = "RetroWare - Nigga Balls | User: dev  | 13:11:53 PM - Jan. 27, 2022  |   Version 0.5a [in-dev]  "
 					TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 					TextLabel.TextSize = 10.000
 					TextLabel.TextStrokeTransparency = 0.000
@@ -9068,7 +9067,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 						local text = script.Parent
 
 						game:GetService("RunService").Heartbeat:Connect(function()
-							text.Text = "NIGGERWARE  -  Nigga Balls  |  User: dev  |  " ..os.date("%X",os.time()).. "  "  ..os.date("%p",os.time()).. "  -  " ..os.date("%b",os.time()).. ".  " ..os.date("%d",os.time()).. ",  " ..os.date("%Y",os.time())..  "  |  Version 0.5a [in-dev]  "
+							text.Text = "RetroWare  -  Nigga Balls  |  User: dev  |  " ..os.date("%X",os.time()).. "  "  ..os.date("%p",os.time()).. "  -  " ..os.date("%b",os.time()).. ".  " ..os.date("%d",os.time()).. ",  " ..os.date("%Y",os.time())..  "  |  Version 0.5a [in-dev]  "
 						end)
 
 					end
@@ -13467,7 +13466,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					return Tab 
 				end 
 
-				NIGGER.Parent = game.CoreGui 
+				Retro.Parent = game.CoreGui 
 
 				return menu 
 			end 
@@ -14084,18 +14083,18 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				end 
 			end 
 
-			makefolder("NIGGERlua") 
+			makefolder("Retrolua") 
 
 			local allluas = {} 
 
-			for _,lua in pairs(listfiles("NIGGERlua")) do 
-				local luaname = GSUB(lua, "NIGGERlua\\", "") 
+			for _,lua in pairs(listfiles("Retrolua")) do 
+				local luaname = GSUB(lua, "Retrolua\\", "") 
 				INSERT(allluas, luaname) 
 			end 
 
 			RunService.RenderStepped:Wait() 
 
-			local gui = library:New("NIGGERWARE") 
+			local gui = library:New("RetroWare") 
 			local legit = gui:Tab("legit") 
 			local rage = gui:Tab("rage") 
 			local visuals = gui:Tab("visuals") 
@@ -14118,7 +14117,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			local luascripts = luas:Sector("lua scripts", "Left") 
 			luascripts:Element("Scroll", "lua", {options = allluas, Amount = 5}) 
 			luascripts:Element("Button", "load", {}, function() 
-				loadstring(readfile("NIGGERlua\\"..values.luas["lua scripts"].lua.Scroll))() 
+				loadstring(readfile("Retrolua\\"..values.luas["lua scripts"].lua.Scroll))() 
 			end) 
 			
 			local knife = skins:Sector("knife", "Left") 
@@ -15411,12 +15410,12 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 					for i = 1, 9e9 do
 						wait(0.1)
 						local chatmessages = {
-							"No NIGGER? L",
+							"No RetroWare? L",
 							"Seems like u died",
 							"Did You die? aww",
-							"Losing to NIGGER? Cannot be me.",
+							"Losing to RetroWare? Cannot be me.",
 							"1",
-							"NIGGER UID?, right none",
+							"RetroWares       ",
 							"You died to a bbot ui stormy aww uwu",
 							"Died to Hitpart",
 							"Died to Standard",
@@ -15425,7 +15424,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 							"When are u gonna win",
 							"cant beat me with that skidded cheat?",
 							"Oopsie",
-							"this cheat is a paste and you are playing against a skid whom if tapped you are retarded secret message i some retards from og swaggy niggers raped yo whole family kid",
+							"Rawr",
 							"What cheat is that Qual? ",
 							"Ratted, it seems like ur mom is my gf",	
 							"It looks like your face is on 'The Baddest Hvh'.",
@@ -15462,7 +15461,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			end)() 
 			grenades:Element("Dropdown", "grenade", {options = {"Flashbang", "Smoke Grenade", "Molotov", "HE Grenade", "Decoy Grenade"}}) 
 			grenades:Element("Button", "crash server", {}, function() 
-				local A_1 = "NIGGER️WARE🖥️"
+				local A_1 = "🖥️🖥️ Server smoked by RetroWare.club. Get RetroWare now. 🖥️🖥️"
 				local A_2 = false
 				local A_3 = "Innocent" 
 				local A_4 = false
@@ -15617,7 +15616,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				TextLabel.Position = UDim2.new(0, 0, 0, 0)
 				TextLabel.Size = UDim2.new(0, 1,0, 22)
 				TextLabel.Font = Enum.Font.Ubuntu
-				TextLabel.Text = "NIGGERWARE"
+				TextLabel.Text = "RetroWare"
 				TextLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
 				TextLabel.TextSize = 10.000
 				TextLabel.TextStrokeTransparency = 0.000
@@ -15657,7 +15656,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 				watermarklocation.Enabled = tbl.Toggle
 			end)
 
-			addons:Element('TextBox', 'watermark text', {placeholder = 'text here', default = {text = 'NIGGERWARE'}}, function(tbl)
+			addons:Element('TextBox', 'watermark text', {placeholder = 'text here', default = {text = 'RetroWare'}}, function(tbl)
 				local textierawr = textboxtriggers(tbl.Text)
 				watermarklocation.BKR.Grad.TextLabel.Text = textierawr
 			end)
@@ -17187,7 +17186,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			LocalPlayer.Status.Kills:GetPropertyChangedSignal("Value"):Connect(function(current) 
 				if current == 0 then return end 
 				if values.misc.chat["kill say"].Toggle then 
-					game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat["message"].Text ~= "" and values.misc.chat["message"].Text or "NIGGERWARE.club", false, "Innocent", false, true) 
+					game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(values.misc.chat["message"].Text ~= "" and values.misc.chat["message"].Text or "RetroWare.club", false, "Innocent", false, true) 
 				end 
 			end) 
 
@@ -18058,7 +18057,7 @@ CreateHitElement(" !!!  IMPORTANT  !!!\
 			CreateHitElement("   Done loading the cb cheat.",Color3.new(1,1,1))
 			getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).moveOldMessages()
 			getsenv(game.Players.LocalPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage(
-			"NIGGERWARE",
+			"RetroWare",
 			"successfully loaded!",
 			Color3.fromRGB(109,57,142), 
 			Color3.new(1,1,1),
