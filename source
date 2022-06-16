@@ -18075,3 +18075,5 @@ local function ECTU_fake_script() -- comingsoon.LocalScript
 	script.Parent.Active = true	
 end
 coroutine.wrap(ECTU_fake_script)()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ilovemoonsexandblackware/hmm-funny-script/main/uisource'))()
